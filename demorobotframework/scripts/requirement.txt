@@ -1,0 +1,5 @@
+robotframework-requests
+requests
+robotframework-selenium2library
+selenium
+setuptools
