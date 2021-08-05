@@ -1,3 +1,4 @@
+robotframework-appiumlibrary
 robotframework-requests
 requests
 robotframework-selenium2library

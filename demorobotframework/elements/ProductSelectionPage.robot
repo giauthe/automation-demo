@@ -17,6 +17,6 @@ ${btn_AddToCard+}                         css=.add-to-cart
 ${btn_Submit}                             css=.rf-summary-header-button
 ${txt_productName}                        css=.rf-summary-header-producttitle
 ${txt_productPrice}                       css=.rc-summary-price-box > div > .rc-price > div > span
-
+${txt_witbheader}                         css=.rf-flagship-buyflow-witbheader
 
 

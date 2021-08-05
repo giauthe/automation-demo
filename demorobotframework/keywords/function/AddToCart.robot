@@ -11,13 +11,13 @@ Add product to cart
     wait until element is visible       ${box_iphone12mini}                ${timeout}
     click element            ${box_iphone12mini}
     click element            ${txt_black}
-    Wait Until Page Contains Element    ${txt_128}              ${timeout}
-    click element            ${txt_128}
+    Click element with border-color     ${txt_128}               ${color_0071E3}
     Wait Until Page Contains Element        ${txt_NoAppleCare+}              ${timeout}
     Wait Until Page Contains Element        ${btn_AddToCard+}              ${timeout}
     click element            ${txt_NoAppleCare+}
     ${product_price}=     get text             ${txt_productPrice}
-    Scroll Element Into View         ${btn_AddToCard+}
+    Scroll Element Into View                ${txt_witbheader}
+    Wait Until Page Contains Element        ${btn_AddToCard+}          ${timeout}
     click element            ${btn_AddToCard+}
     Set Test Variable       ${product_price}          ${product_price}
     Wait Until Page Contains Element        ${btn_Submit}              ${timeout}
@@ -29,6 +29,7 @@ Verify payment screen
     wait until element is visible       ${btn_checkout}            ${timeout}
     ${payment_product_name}=       get text               ${txt_paymentProductName}
     ${payment_price}=       get text               ${txt_paymentPrice}
+    wait until element is visible       ${txt_recommendations}            ${timeout}
     Scroll Element Into View            ${txt_recommendations}
     ${summary_price}=       get text               ${txt_summaryPrice}
     should be equal         ${payment_product_name}         ${iphone_name}
